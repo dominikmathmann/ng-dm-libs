@@ -23,6 +23,7 @@ var LoadOnScollDirective = /** @class */ (function () {
      * @return {?}
      */
     function () {
+        this.setOnLoad(true);
         this.emitCurrentValues();
     };
     /**

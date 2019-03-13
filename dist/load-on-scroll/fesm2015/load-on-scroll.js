@@ -24,6 +24,7 @@ class LoadOnScollDirective {
      * @return {?}
      */
     ngOnInit() {
+        this.setOnLoad(true);
         this.emitCurrentValues();
     }
     /**

@@ -25,6 +25,7 @@
          * @return {?}
          */
             function () {
+                this.setOnLoad(true);
                 this.emitCurrentValues();
             };
         /**
