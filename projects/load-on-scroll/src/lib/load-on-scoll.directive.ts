@@ -24,6 +24,9 @@ export class LoadOnScollDirective {
   @Input()
   disableOnLoad = false;
 
+  @Input()
+  bottomPixelBorder = 25;
+
   @Output()
   loadTrigger = new EventEmitter<any>();
 
@@ -41,7 +44,7 @@ export class LoadOnScollDirective {
     this.scrollSubscription = fromEvent(window, 'scroll')
       .pipe(debounceTime(200))
       .subscribe(e => {
-        if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+        if (window.scrollY + window.innerHeight + this.bottomPixelBorder >= document.body.scrollHeight) {
           this.onClick();
         }
       });
