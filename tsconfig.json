@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "load-on-scroll": [
+        "dist/load-on-scroll"
+      ],
+      "load-on-scroll/*": [
+        "dist/load-on-scroll/*"
+      ]
+    }
   }
 }

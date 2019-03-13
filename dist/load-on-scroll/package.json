@@ -1,0 +1,21 @@
+{
+  "name": "load-on-scroll",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/load-on-scroll.umd.js",
+  "module": "fesm5/load-on-scroll.js",
+  "es2015": "fesm2015/load-on-scroll.js",
+  "esm5": "esm5/load-on-scroll.js",
+  "esm2015": "esm2015/load-on-scroll.js",
+  "fesm5": "fesm5/load-on-scroll.js",
+  "fesm2015": "fesm2015/load-on-scroll.js",
+  "typings": "load-on-scroll.d.ts",
+  "metadata": "load-on-scroll.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "load-on-scroll": {
+      "root": "projects/load-on-scroll",
+      "sourceRoot": "projects/load-on-scroll/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/load-on-scroll/tsconfig.lib.json",
+            "project": "projects/load-on-scroll/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/load-on-scroll/src/test.ts",
+            "tsConfig": "projects/load-on-scroll/tsconfig.spec.json",
+            "karmaConfig": "projects/load-on-scroll/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/load-on-scroll/tsconfig.lib.json",
+              "projects/load-on-scroll/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-dm-libs"
