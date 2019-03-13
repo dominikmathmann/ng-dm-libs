@@ -17,6 +17,7 @@ class LoadOnScollDirective {
         this.first = 0;
         this.rotateOnLoad = false;
         this.disableOnLoad = false;
+        this.bottomPixelBorder = 25;
         this.loadTrigger = new EventEmitter();
     }
     /**
@@ -38,7 +39,7 @@ class LoadOnScollDirective {
          * @return {?}
          */
         e => {
-            if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+            if (window.scrollY + window.innerHeight + this.bottomPixelBorder >= document.body.scrollHeight) {
                 this.onClick();
             }
         }));
@@ -122,6 +123,7 @@ LoadOnScollDirective.propDecorators = {
     rotateOnLoadChildSelector: [{ type: Input }],
     rotateOnLoad: [{ type: Input }],
     disableOnLoad: [{ type: Input }],
+    bottomPixelBorder: [{ type: Input }],
     loadTrigger: [{ type: Output }],
     onClick: [{ type: HostListener, args: ['click',] }]
 };

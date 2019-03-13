@@ -15,6 +15,7 @@
             this.first = 0;
             this.rotateOnLoad = false;
             this.disableOnLoad = false;
+            this.bottomPixelBorder = 25;
             this.loadTrigger = new core.EventEmitter();
         }
         /**
@@ -42,7 +43,7 @@
              * @param {?} e
              * @return {?}
              */function (e) {
-                    if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+                    if (window.scrollY + window.innerHeight + _this.bottomPixelBorder >= document.body.scrollHeight) {
                         _this.onClick();
                     }
                 }));
@@ -148,6 +149,7 @@
             rotateOnLoadChildSelector: [{ type: core.Input }],
             rotateOnLoad: [{ type: core.Input }],
             disableOnLoad: [{ type: core.Input }],
+            bottomPixelBorder: [{ type: core.Input }],
             loadTrigger: [{ type: core.Output }],
             onClick: [{ type: core.HostListener, args: ['click',] }]
         };

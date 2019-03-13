@@ -9,6 +9,7 @@ export declare class LoadOnScollDirective {
     rotateOnLoadChildSelector: string;
     rotateOnLoad: boolean;
     disableOnLoad: boolean;
+    bottomPixelBorder: number;
     loadTrigger: EventEmitter<any>;
     private scrollSubscription;
     constructor(el: ElementRef, renderer: Renderer2);
