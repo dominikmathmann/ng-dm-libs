@@ -23,7 +23,7 @@ class LoadOnScollDirective {
     /**
      * @return {?}
      */
-    ngOnInit() {
+    ngAfterViewInit() {
         this.setOnLoad(true);
         this.emitCurrentValues();
     }

@@ -13,7 +13,7 @@ export declare class LoadOnScollDirective {
     loadTrigger: EventEmitter<any>;
     private scrollSubscription;
     constructor(el: ElementRef, renderer: Renderer2);
-    ngOnInit(): void;
+    ngAfterViewInit(): void;
     ngOnChanges(): void;
     onClick(): void;
     private emitCurrentValues;

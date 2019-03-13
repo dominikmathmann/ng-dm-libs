@@ -34,7 +34,7 @@ export class LoadOnScollDirective {
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.setOnLoad(true);
     this.emitCurrentValues();
   }

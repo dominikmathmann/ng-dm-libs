@@ -21,7 +21,7 @@
         /**
          * @return {?}
          */
-        LoadOnScollDirective.prototype.ngOnInit = /**
+        LoadOnScollDirective.prototype.ngAfterViewInit = /**
          * @return {?}
          */
             function () {

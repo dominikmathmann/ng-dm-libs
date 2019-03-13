@@ -10,7 +10,7 @@ import { delay } from 'rxjs/operators';
 export class AppComponent {
   loaded = new Subject();
 
-  entries = new Array(75);
+  entries = new Array(50);
 
   constructor() {}
 
