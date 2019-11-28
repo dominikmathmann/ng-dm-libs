@@ -1,0 +1,1 @@
+@-webkit-keyframes los-rotation{from{transform:rotate(0)}to{transform:rotate(359deg)}}@keyframes los-rotation{from{transform:rotate(0)}to{transform:rotate(359deg)}}.los-rotate{-webkit-animation:2s linear infinite los-rotation;animation:2s linear infinite los-rotation}
